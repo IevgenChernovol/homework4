@@ -53,6 +53,7 @@ margin-top: 50px;
 margin-right: -55px;
 }
 .countries ul{
+  background-color: transparent;
   list-style: none;
 }
 .countries li{
@@ -117,73 +118,70 @@ img.copyright{
   margin-top: 20px;
   margin-bottom: 20px;
 }
-ul.menu{
-  font-size:0;
-  line-height:0;
-  width: auto;
-  height: 25px;
-  background-color: #333333;
-  position: relative;
-
-}
-li.menu{
-  float: left;
-  font-size:20px;
-  line-height:normal;
-  list-style: none;
-  padding: 0 35px;
-}
-a.menu{
-  text-decoration: none;
-  font-family:Tahoma;
-  font-size: 14px;
-  color: #ffffff;
-}
-a.menu:hover{
-}
-ul.submenu{
-  display: block;
-  position: absolute;
-  width: auto;
-  height: auto;
-  padding:0px 20px 0px 0px;
-  background-color: #333333;
-}
-
-li.submenu{
+ul {
     display: block;
-  }
-a.submenu{
-  display: block;
-  background-color: black;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #303030
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.menu > li {
+    float: left;
+    position: relative;
+}
+ul.menu > li > a {
+    display: block;
+    padding: 10px 34px;
+    color: white;
+    background-color: #303030;
     text-decoration: none;
-    font-family:Tahoma;
-    font-size: 14px;
-    color: #ffffff;
-    padding: 10px;
+}
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 171px;
+    top: 37px;
+
+}
+ul.submenu > li {
+    display: block;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 10px 34px;
+    color: white;
+    background-color: #303030;
+    text-decoration: none;
+}
+ul.menu > li:hover > ul.submenu {
+    display: block;
 }
 .content{
-  height: 546px;
+  float: left;
+  width: 998px;
+  background-image: url(contentfon.jpg);
+  background-repeat: repeat-y;
 }
 .left_box{
   float: left;
   width: 209px;
-  height: 546px;
-  background-image: url(left_block.jpg);
   background-repeat: no-repeat;
 }
 .central_box{
   float: left;
   width: 580px;
-  height: 546px;
-  border-left: 1px solid #c7cacf;
-  border-right: 1px solid #c7cacf;
+
 }
 .right_box{
   float: right;
   width: 209px;
-  height: 546px;
-  background-image: url(right_block.jpg);
   background-repeat: no-repeat;
 }
 h1{
@@ -193,11 +191,12 @@ h1{
   color: #424c43;
 }
 h2{
-  font-size: 14px;
+  font-size: 15px;
   font-family: Tahoma;
   color: #424c43;
   text-align: center;
   line-height: 24px;
 }
 .footer{
+  clear: both;
 }
