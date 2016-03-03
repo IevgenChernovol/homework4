@@ -12,29 +12,20 @@ body {
   background-repeat: repeat-x;
 }
 .fon{
-  background-image: url(whitefon.jpg);
-  width: 1018px;
-  height: 991px;
+  width: 1000px;
+  background-color: white;
   margin: 0 auto;
 }
 .wrapper{
-  padding-left: 9px;
-  padding-right: 9px;
 }
 .header{
   padding: 10px 30px 0px 30px;
-
 }
 .logo{
   float: left;
-  background-image: url(logo.png);
-  background-repeat: no-repeat;
-  width: 283px;
-  height: 164px;
 }
 .slogan{
   float: left;
-  z-index: 1;
   margin-top: 100px;
   margin-left: -200px;
   font-family:Tahoma;
@@ -47,10 +38,14 @@ body {
   font-size: 12px;
   color: #128aa7;
 }
+.contakts a{
+  text-decoration:none;
+  color: #128aa7;
+}
 .countries{
-float:right;
-margin-top: 50px;
-margin-right: -55px;
+  float:right;
+  margin-top: 50px;
+  margin-right: -55px;
 }
 .countries ul{
   background-color: transparent;
@@ -63,13 +58,12 @@ margin-right: -55px;
 }
 .countries a{
   display: block;
-  width: 42px;
+  width: 50px;
   height: auto;
   font-size: 10px;
   color:#128aa7;
   text-align: center;
   padding-top: 40px;
-
 }
 li.maldives{
   background-image: url(maldives.png);
@@ -101,7 +95,6 @@ li.india{
   background-repeat: no-repeat;
   background-position: center top;
 }
-
 .fotoramka{
   clear: both;
   background-image: url(foto.jpg);
@@ -109,15 +102,7 @@ li.india{
   width: 1000px;
   height: 237px;
 }
-img.copyright{
-  width: 199px;
-  height: 12px;
-  background-color:transparent;
-  display: block;
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+
 ul {
     display: block;
     margin: 0;
@@ -199,4 +184,10 @@ h2{
 }
 .footer{
   clear: both;
+  line-height: 30px;
+  text-align: center;
+}
+.footer > a{
+  text-decoration:none;
+  color: white;
 }
